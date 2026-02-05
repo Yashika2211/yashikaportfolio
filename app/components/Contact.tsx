@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, Instagram, ExternalLink, MapPin } from 'lucide-react'
+import { Mail, Github, Linkedin, Instagram, ExternalLink, MapPin, Phone } from 'lucide-react'
 
 export default function Contact() {
   const contactMethods = [
@@ -11,6 +11,13 @@ export default function Contact() {
       value: "yashika.bhatia0522@gmail.com",
       href: "mailto:yashika.bhatia0522@gmail.com?subject=Let's%20Work%20Together",
       color: "hover:text-neon-blue"
+    },
+    {
+      icon: <Phone className="w-6 h-6" />,
+      label: "Phone",
+      value: "+91 8825732098",
+      href: "tel:+918825732098",
+      color: "hover:text-green-400"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
@@ -23,7 +30,7 @@ export default function Contact() {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
       value: "View my code",
-      href: "https://github.com/yashikabhatia",
+      href: "https://github.com/yashika2211",
       color: "hover:text-gray-300"
     },
     {
@@ -36,7 +43,7 @@ export default function Contact() {
   ]
 
   const achievements = [
-    "500+ LeetCode problems solved",
+    "200+ LeetCode problems solved",
     "3 Hackathon wins",
     "Open source contributor",
     "SIH 2025 internal round qualified"
@@ -129,7 +136,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold mb-6">Quick Stats</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-neon-blue mb-2">500+</div>
+                    <div className="text-3xl font-bold text-neon-blue mb-2">200+</div>
                     <div className="text-sm text-gray-400">Problems Solved</div>
                   </div>
                   <div className="text-center">

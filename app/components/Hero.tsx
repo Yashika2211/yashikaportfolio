@@ -79,7 +79,7 @@ export default function Hero() {
               className="flex gap-8 text-sm"
             >
               <div>
-                <div className="text-2xl font-bold text-white">500+</div>
+                <div className="text-2xl font-bold text-white">200+</div>
                 <div className="text-gray-500">LeetCode</div>
               </div>
               <div>
@@ -100,7 +100,7 @@ export default function Hero() {
               className="flex flex-wrap gap-4 pt-4"
             >
               <a
-                href="https://github.com/yashikabhatia"
+                href="https://github.com/yashika2211"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
@@ -109,10 +109,15 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               
-              <button className="border border-gray-600 text-white px-8 py-4 rounded-lg font-medium hover:border-gray-400 transition-all duration-300 flex items-center gap-2">
+              <a
+                href="https://drive.google.com/uc?export=download&id=13kmbhiv5ulLuGK_saNS__qYt6GbHazJW"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gray-600 text-white px-8 py-4 rounded-lg font-medium hover:border-gray-400 transition-all duration-300 flex items-center gap-2"
+              >
                 <Download className="w-4 h-4" />
                 <span>Resume</span>
-              </button>
+              </a>
               
               <a 
                 href="https://leetcode.com/u/yashikabhatia2209/"

@@ -47,7 +47,7 @@ export default function About() {
               I build intelligent systems, scalable products, and AI that moves fast. 
               Software Developer & Data Science Engineer specializing in AI-driven systems, 
               full-stack architecture, and low-latency applications. Expert in machine learning, 
-              statistical analysis, and real-time ML inference. 500+ LeetCode problems solved. 
+              statistical analysis, and real-time ML inference. 200+ LeetCode problems solved. 
               I ship fast, scalable, production-grade software with cutting-edge ML capabilities.
             </p>
           </div>

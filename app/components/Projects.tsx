@@ -8,7 +8,7 @@ export default function Projects() {
     {
       title: "NeuroVision",
       subtitle: "Real-time Emotion Detection",
-      description: "AI-powered emotion recognition system with sub-30ms GPU inference and live dashboard capabilities.",
+      description: "AI-powered emotion recognition system with sub-30ms GPU inference and live dashboard capabilities. Currently in development with advanced CNN architecture.",
       icon: <Brain className="w-8 h-8" />,
       image: "/api/placeholder/600/400",
       technologies: ["TensorFlow", "OpenCV", "WebSockets", "React", "Python"],
@@ -22,8 +22,8 @@ export default function Projects() {
         "Live dashboard with WebSocket streaming",
         "Custom CNN architecture optimized for speed"
       ],
-      github: "https://github.com/yashikabhatia/neurovision",
-      demo: "https://github.com/yashikabhatia/neurovision",
+      github: "https://github.com/yashika2211",
+      demo: "https://github.com/yashika2211",
       featured: true
     },
     {
@@ -111,6 +111,11 @@ export default function Projects() {
                       Featured
                     </span>
                   )}
+                  {project.title === "NeuroVision" && (
+                    <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-semibold">
+                      Work in Progress
+                    </span>
+                  )}
                 </div>
 
                 <div>
@@ -156,20 +161,39 @@ export default function Projects() {
 
                 {/* Links */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 glass-card px-6 py-3 rounded-xl hover:neon-glow transition-all duration-300"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 glass px-6 py-3 rounded-xl hover:scale-105 transition-all duration-300"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.title === "NeuroVision" ? (
+                    <>
+                      <div className="flex items-center gap-2 glass-card px-6 py-3 rounded-xl opacity-60 cursor-not-allowed">
+                        <Github className="w-4 h-4" />
+                        <span>Soon</span>
+                      </div>
+                      <div className="flex items-center gap-2 glass px-6 py-3 rounded-xl opacity-60 cursor-not-allowed">
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Soon</span>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 glass-card px-6 py-3 rounded-xl hover:neon-glow transition-all duration-300"
+                      >
+                        <Github className="w-4 h-4" />
+                        <span>Code</span>
+                      </a>
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 glass px-6 py-3 rounded-xl hover:scale-105 transition-all duration-300"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Live Demo</span>
+                      </a>
+                    </>
+                  )}
                 </div>
               </div>
 
@@ -202,9 +226,14 @@ export default function Projects() {
                               <div className="text-lg text-gray-300">Sub-second Predictions</div>
                               <div className="mt-4">
                                 <div className="flex justify-center space-x-1">
-                                  {[...Array(8)].map((_, i) => (
-                                    <div key={i} className={`w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t`} style={{height: `${Math.random() * 40 + 20}px`, animationDelay: `${i * 0.1}s`}}></div>
-                                  ))}
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-8"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-12"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-6"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-16"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-10"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-14"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-12"></div>
+                                  <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-18"></div>
                                 </div>
                               </div>
                             </div>

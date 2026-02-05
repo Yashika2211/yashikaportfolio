@@ -14,11 +14,11 @@ export default function LeetCode() {
   })
 
   const finalStats = {
-    total: 500,
-    easy: 180,
-    medium: 250,
-    hard: 70,
-    streak: 45
+    total: 200,
+    easy: 80,
+    medium: 100,
+    hard: 20,
+    streak: 15
   }
 
   useEffect(() => {
@@ -52,23 +52,23 @@ export default function LeetCode() {
     {
       label: 'Easy',
       count: animatedStats.easy,
-      total: 200,
+      total: 150,
       color: 'bg-green-500',
-      percentage: (animatedStats.easy / 200) * 100
+      percentage: (animatedStats.easy / 150) * 100
     },
     {
       label: 'Medium',
       count: animatedStats.medium,
-      total: 300,
+      total: 200,
       color: 'bg-yellow-500',
-      percentage: (animatedStats.medium / 300) * 100
+      percentage: (animatedStats.medium / 200) * 100
     },
     {
       label: 'Hard',
       count: animatedStats.hard,
-      total: 100,
+      total: 50,
       color: 'bg-red-500',
-      percentage: (animatedStats.hard / 100) * 100
+      percentage: (animatedStats.hard / 50) * 100
     }
   ]
 
@@ -76,13 +76,13 @@ export default function LeetCode() {
     {
       icon: <Trophy className="w-6 h-6" />,
       title: "Problem Solver",
-      description: "500+ problems solved",
+      description: "200+ problems solved",
       color: "text-yellow-400"
     },
     {
       icon: <Target className="w-6 h-6" />,
       title: "Consistency",
-      description: "45-day streak",
+      description: "15-day streak",
       color: "text-green-400"
     },
     {
@@ -206,24 +206,22 @@ export default function LeetCode() {
               {/* Progress Chart Placeholder */}
               <div className="glass-card p-8 rounded-2xl">
                 <h3 className="text-xl font-bold mb-6 text-center">Solving Pattern</h3>
-                              <div className="h-48 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 rounded-xl flex items-center justify-center">
-                                <div className="text-center">
-                                  <TrendingUp className="w-12 h-12 text-neon-blue mx-auto mb-4" />
-                                  <p className="text-gray-400">Consistent daily progress</p>
-                                  <div className="mt-4 flex justify-center space-x-1">
-                                    {[40, 60, 35, 80, 45, 70, 55, 90].map((height, i) => (
-                                      <div 
-                                        key={i} 
-                                        className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t"
-                                        style={{
-                                          height: `${height}px`,
-                                          animationDelay: `${i * 0.1}s`
-                                        }}
-                                      />
-                                    ))}
-                                  </div>
-                                </div>
-                              </div>
+                <div className="h-48 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <TrendingUp className="w-12 h-12 text-neon-blue mx-auto mb-4" />
+                    <p className="text-gray-400">Consistent daily progress</p>
+                    <div className="mt-4 flex justify-center space-x-1">
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-10" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-16" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-8" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-20" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-12" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-18" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-14" />
+                      <div className="w-2 bg-gradient-to-t from-neon-purple to-neon-blue rounded-t h-22" />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Recent Activity */}
